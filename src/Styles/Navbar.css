@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+:root {
+    --mainColor: black;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #CC9933;
+    --textColor: white;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color:  var(--textColor);
+    position: fixed;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-container.hidden {
+    transform: translateY(-100%);
+}
+
+.navbar-container .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    display: none;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-list li{
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
+    width: 5rem;
+    font-size: 1.5rem;
+}
+
+#about-width {
+    width: 7rem;
+}
+
+#contact-width {
+    width: 8rem;
+}
+
+.navbar li:hover {
+    color: var(--secondaryColor);
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 5rem;
+}
+
+#Eric:hover {
+    color: var(--secondaryColor);
+    cursor: pointer;
+}
+
+#Eric p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar-container .nav-btn {
+        display: block;
+        opacity: 1;
+    }
+
+    .navbar-container .navbar {
+        position: fixed;
+        top: -200vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+    }
+
+    .navbar-container .responsive_nav {
+        transform: translateY(200vh);
+    }
+
+    .navbar .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .navbar-list {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navbar li {
+        font-size: 1.5rem;
+        margin: 1.2rem;
+    }
+}

@@ -1,0 +1,379 @@
+/* Important: the row height size must be individually calculated according to cell height size 
+    Future task: could make this more responsive
+*/
+
+.projects-container {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    
+    color: #e1eef8;
+}
+
+.projects-container h2 {
+    margin: 0 auto 1rem auto;
+    width: 80vw;
+    font-size: 6rem;
+}
+
+.proj-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 80%;
+    max-width: 100rem;
+
+    height: 110rem;
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+}
+
+.proj-cell {
+    background-color: #1e2124;
+    border-radius: 20px;
+    border: 2px solid #32383e;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+
+    width: 30rem;
+    height: 50rem;
+
+    margin-bottom: 5rem;
+
+    position: relative;
+}
+
+/* Cell Image CSS */
+
+.proj-cell img {
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center top;
+}
+
+#place-holder-img-txt {
+    margin-left: 1rem;
+    position: absolute;
+}
+
+/* Cell Title CSS */
+.proj-text-section {
+    width: 85%;
+    margin: 7.5%;
+}
+
+.proj-text-section h3 {
+    font-size: 1.7rem;
+    margin: 1rem 0 0.3rem 0;
+}
+
+/* Cell Description CSS */
+.proj-desc {
+    height: 9rem;
+}
+
+.proj-desc p {
+    color: #afc9e1;
+    font-size: 1.2rem;
+}
+
+/* Cell Skills CSS */
+.proj-skills {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+/* Cell Alerts CSS */
+.proj-alerts {
+    text-align: bottom;
+
+    position: absolute;
+    left: 10%;
+    bottom: 12%;
+    width: 70%;
+}
+
+.proj-alerts p {
+    color: #de923b;
+    margin: 0;
+}
+
+/* Cell Project Buttons */
+.proj-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    position: absolute;
+    left: 0%;
+    bottom: 4%;
+    width: 100%;
+}
+
+.proj-buttons button {
+    width: 45%;
+    background-color: #0a2744;
+    border: #0a2744;
+    color: #afc9e1;
+}
+
+.proj-buttons button:hover {
+    background-color: #12467B;
+}
+
+.proj-source {
+    background-color: #1e2124 !important;
+}
+
+.proj-source:hover {
+    background-color: #0a2744 !important;
+}
+
+.disabled-live {
+    background-color: #171a1c !important;
+    color: #9fa6ad !important;
+}
+
+.disabled-src {
+    color: #9fa6ad !important;
+}
+
+.proj-buttons button p {
+    margin: 0;
+}
+
+.proj-buttons a {
+    width: 45%;
+}
+
+.proj-buttons a button{
+    width: 100%;
+}
+
+/* Projects Bottom Page Notice */
+.projects-more-info {
+    text-align: center;
+    border: 2px solid #32383e;
+    border-radius: 100px;
+    height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.projects-more-info h3 {
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 1800px) {    
+    .proj-row {
+        height: 130rem;
+    }
+
+    .proj-cell {        
+        width: 30%;
+        height: 60rem;
+    
+        margin-bottom: 5rem;
+    
+        position: relative;
+    }
+
+    .proj-cell img {
+        width: 100%;
+        height: 25%;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .proj-text-section h3 {
+        font-size: 1.7rem;
+        margin: 2rem 0 0.3rem 0;
+    }
+
+    .proj-desc {
+        height: auto;
+    }
+
+    .proj-skills {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .proj-alerts {
+        bottom: 15%;
+    }
+
+    .proj-buttons button {
+        width: 45%;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {    
+    .proj-cell {        
+        width: 47%;
+        height: 55rem;
+    
+        margin-bottom: 5rem;
+        position: relative;
+    }
+
+    .proj-cell img {
+        width: 100%;
+        height: 30%;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .proj-text-section h3 {
+        font-size: 1.7rem;
+        margin: 2rem 0 0.3rem 0;
+    }
+
+    .proj-desc {
+        height: auto;
+    }
+
+    .proj-skills {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .proj-alerts {
+        text-align: bottom;
+
+        position: absolute;
+        left: 10%;
+        bottom: 12%;
+        width: 70%;
+    }
+
+    .proj-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+        position: absolute;
+        left: 0%;
+        bottom: 2%;
+        width: 100%;
+    }
+
+    .proj-buttons button {
+        font-size: 1.4rem;
+    }
+
+    .projects-more-info {
+        height: 5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .proj-row {
+        height: 240rem;
+    }
+    
+    .proj-row {
+        justify-content: center;
+    }
+
+    .proj-cell {        
+        width: 80%;
+    }
+
+    .projects-more-info {
+        height: 7rem;
+    }
+}
+
+@media screen and (max-width: 630px) {    
+    .projects-container h2 {
+        font-size: 5rem;
+    }
+
+    .proj-text-section {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .proj-cell {        
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .proj-row {
+        height: 280rem;
+    }
+    
+    .projects-container h2 {
+        font-size: 3.5rem;
+    }
+
+    .proj-cell {
+        height: 65rem;
+    }
+
+    .proj-cell img {
+        height: 25%;
+    }
+
+    .projects-more-info {
+        height: 9rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .projects-container h2 {
+        font-size: 3.5rem;
+    }
+
+    .proj-cell img {
+        height: 25%;
+    }
+
+    .projects-more-info {
+        height: 9rem;
+    }
+}
+
+@media screen and (max-width: 370px) {    
+    .proj-row {
+        width: 90%;
+        height: 288rem;
+    }
+
+    .projects-container h2 {
+        font-size: 3.5rem;
+    }
+
+    .proj-cell {
+        height: 67rem;
+    }
+
+    .proj-cell img {
+        height: 25%;
+    }
+
+    .projects-more-info {
+        height: 9rem;
+    }
+}

@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
+import LandingPage from './Components/LandingPage'
+import MainContent from './Components/MainContent';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [showMain, setShowMain] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setShowMain(false)
+
+    setTimeout(() => {
+      setLoading(false)
+    }, 2500)
+
+    setTimeout(() => {
+      setShowMain(true)
+    }, 3500)
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${!showMain ? 'loading' : ''} ${showMain ? 'light-background' : ''}`}>
+      <LandingPage loading={loading} showMain={!showMain} />
+      {showMain && <MainContent showMain={showMain}/>}
     </div>
   );
 }

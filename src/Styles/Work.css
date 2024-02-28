@@ -1,0 +1,164 @@
+/* Important: the row height size must be individually calculated according to cell height size 
+    Future task: could make this more responsive
+*/
+
+.work-container {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    
+    color: #e1eef8;
+    
+    margin: 10rem 0;
+}
+
+.work-container h2 {
+    margin: 0 auto 1rem auto;
+    width: 80vw;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.work-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    width: 80%;
+    height: 32rem;
+    max-width: 100rem;
+
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+}
+
+.work-cell {
+    background-color: #1e2124;
+    border-radius: 20px;
+    border: 2px solid #32383e;
+    margin-bottom: 2rem;
+    width: 30rem;
+    height: 30rem;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.work-cell img {
+    width: 100%;
+    height: 40%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.work-text-section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.work-text-section a {
+    font-size: 1.6rem;
+    margin: 2rem 0 0.3rem 0;
+    color: #e1eef8;
+
+}
+
+.work-text-section a:hover {
+    color: #cd4b4b;
+}
+
+.work-text-section h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.3rem 0;
+}
+
+.wtatus {
+    margin-bottom: 1rem;
+}
+
+.work-status p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.work-description p {
+    color: #afc9e1;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 1800px) {    
+    .work-cell {        
+        width: 30%;    
+    }
+
+    .work-cell img {
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 1300px) {    
+    .work-row {
+        height: 74rem;
+    }
+    
+    .work-cell {        
+        width: 47%;   
+        margin-bottom: 5rem; 
+    }
+
+    .work-cell img {
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 900px) {    
+    .work-row {
+        height: 90rem;
+        justify-content: center;    
+    }
+    
+    .work-cell {        
+        width: 80%;   
+        height: 25rem;
+        margin-bottom: 5rem; 
+    }
+
+    .work-cell img {
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .work-row {
+        height: 105rem;
+        justify-content: center;    
+    }
+    
+    .work-cell {        
+        height: 30rem;
+        width: 100%;   
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .work-row {
+        justify-content: center;    
+    }
+    
+    .work-cell {        
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .work-row {
+        justify-content: center;   
+        height: 120rem; 
+    }
+    
+    .work-cell {        
+        height: 35rem;
+    }
+}

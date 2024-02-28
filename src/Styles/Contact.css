@@ -1,0 +1,71 @@
+.contact-container {
+    width: 100vw;
+    height: 20rem;
+    margin-top: 5rem;
+    background: linear-gradient(to Bottom, #1e2124, #000000);
+
+    display: flex;
+    justify-content: center;
+    color:#e1eef8;
+}
+
+.contact-inner-container{
+    margin-top: 3rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-inner-container h1{
+    margin-bottom: 2rem;
+}
+
+.contact-email-box {
+    margin: 0;
+}
+
+.contact-last-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 24rem;
+}
+
+.contact-last-row p{
+    font-size: 1.3rem;
+    margin: 0;
+    height: 2rem;
+}
+
+#email-tag {
+    color: #afc9e1;
+}
+
+.contact-github-button button {
+    width: 8rem;
+    height: 3rem;
+    background-color: #0a2744;
+    border: #0a2744;
+    color: #afc9e1;
+}
+
+.contact-github-button button:hover {
+    background-color: #12467B;
+}
+
+.github-button img {
+    height: 100%;
+    width: auto;
+}
+
+@media screen and (max-width: 500px){
+    .contact-last-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-github-button {
+        margin-top: 2rem;
+    }
+}
