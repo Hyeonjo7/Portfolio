@@ -36,12 +36,17 @@ const Projects = () => {
 
                         </div>
                         <div className="proj-buttons">
-                            <button type="button" className="btn btn-primary btn-lg">
-                                <p><FontAwesomeIcon icon={faRocket} /> Live Deployment</p>
-                            </button>
-                            <button type="button" className="proj-source btn btn-primary btn-lg">
-                                <p>&lt;&gt; Source Code</p>
-                            </button>
+                            <a href="https://hyeonjo7.github.io/portfolio/">
+                                <button type="button" className="btn btn-primary btn-lg">
+                                    <p><FontAwesomeIcon icon={faRocket} /> Live Deployment</p>
+                                </button>
+                            </a>
+
+                            <a href="https://github.com/Hyeonjo7/portfolio" rel="noopener noreferrer" target="_blank">
+                                <button type="button" className="proj-source btn btn-primary btn-lg">
+                                    <p>&lt;&gt; Source Code</p>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
