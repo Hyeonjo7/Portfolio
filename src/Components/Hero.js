@@ -14,7 +14,7 @@ const HeroSection = () => {
     </>
 
     const [occupations] = useTypewriter({
-        words: ['A Developer', 'An Instructor', 'A Student', 'A Reader'],
+        words: ['A Developer', 'An Instructor', 'A Student'],
         loop: {},
     })
     const heroOccupation = <>
