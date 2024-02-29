@@ -36,13 +36,14 @@
 }
 
 .work-cell {
-    background-color: #1e2124;
-    border-radius: 20px;
-    border: 2px solid #32383e;
+    /* background-color: #1e2124; */
+    /* border-radius: 20px; */
+    /* border: 2px solid #32383e; */
+    /* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); */
+
     margin-bottom: 2rem;
     width: 30rem;
     height: 30rem;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
 }
 
 .work-cell img {
