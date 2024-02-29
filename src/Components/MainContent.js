@@ -6,9 +6,9 @@ import Projects from './Projects';
 import Work from './Work';
 import Contact from './Contact';
 
-const MainContent = ({ showMain }) => {
+const MainContent = ({ loading, showMain }) => {
     return (
-        <div className={`main ${showMain ? 'fade-in' : ''}`}>
+        <div className={`main ${loading ? '' : 'show'} ${showMain ? 'fade-in' : ''} `}>
             <Navbar/>
             <div id="section1"><Hero /></div>
             <div id="section2"><AboutMe /></div>

@@ -33,9 +33,9 @@
 }
 
 .about-image-section {
-    width: 40rem;
-    height: 40rem;
-    border-radius: 9999;
+    width: 35rem;
+    height: 35rem;
+    margin-left: 2rem;
 }
 
 .about-image-section img {
@@ -99,6 +99,7 @@
         width: 30rem;
         height: 30rem;
         margin-bottom: 1rem;
+        margin-left: 0;
     }
 }
 
