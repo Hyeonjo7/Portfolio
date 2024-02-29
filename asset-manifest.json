@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4cb615b1.css",
-    "main.js": "/portfolio/static/js/main.bcf164c8.js",
+    "main.css": "/portfolio/static/css/main.041a46b0.css",
+    "main.js": "/portfolio/static/js/main.28c80cc2.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/profile1.png": "/portfolio/static/media/profile1.a14f5afc9d48308f8a0f.png",
     "static/media/Thinking-Tree-Website.png": "/portfolio/static/media/Thinking-Tree-Website.f0cd59470393d4f99b22.png",
     "static/media/portfolio-website.png": "/portfolio/static/media/portfolio-website.090bf539304f617cbbf6.png",
     "static/media/image-tt.png": "/portfolio/static/media/image-tt.1e53299658301d18562f.png",
     "static/media/Junior-Engineers-Website.png": "/portfolio/static/media/Junior-Engineers-Website.16d1e1700a5962274432.png",
-    "static/media/profile2.jpg": "/portfolio/static/media/profile2.8b67f28b3e7e4e46807f.jpg",
+    "static/media/profile2.jpg": "/portfolio/static/media/profile2.f673d09bd712c5d8ec7d.jpg",
     "static/media/github-icon.png": "/portfolio/static/media/github-icon.a11bc28e436ac9f1dc8f.png",
     "static/media/lurk-for-lurk.png": "/portfolio/static/media/lurk-for-lurk.c7b2da608b982276ea46.png",
     "static/media/html-5.png": "/portfolio/static/media/html-5.429966de85eabacfadec.png",
     "static/media/react.png": "/portfolio/static/media/react.56e533bca783a4d26f0e.png",
     "index.html": "/portfolio/index.html",
-    "main.4cb615b1.css.map": "/portfolio/static/css/main.4cb615b1.css.map",
-    "main.bcf164c8.js.map": "/portfolio/static/js/main.bcf164c8.js.map",
+    "main.041a46b0.css.map": "/portfolio/static/css/main.041a46b0.css.map",
+    "main.28c80cc2.js.map": "/portfolio/static/js/main.28c80cc2.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cb615b1.css",
-    "static/js/main.bcf164c8.js"
+    "static/css/main.041a46b0.css",
+    "static/js/main.28c80cc2.js"
   ]
 }
