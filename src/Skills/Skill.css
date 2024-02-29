@@ -13,9 +13,11 @@
 
 .skill-icon {
     height: 2rem;
+    width: 2rem;
     border-radius: 999px;
 }
 
 .skill-icon img {
     height: 70%;
+    width: 70%;
 }

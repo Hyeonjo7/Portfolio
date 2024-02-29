@@ -1,6 +1,6 @@
 import "../Styles/Hero.css";
 import myImage from '../Assets/profile1.png';
-
+import { motion, useInView, useAnimation } from "framer-motion"
 
 const HeroSection = () => {
     
